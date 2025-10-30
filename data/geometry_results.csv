@@ -1,0 +1,6 @@
+algorithm,points_count,time_micros,distance
+brute_force,10,0,102.335260
+brute_force,50,7,20.723665
+brute_force,100,27,1.593901
+brute_force,500,644,0.438899
+brute_force,1000,2601,0.712832
