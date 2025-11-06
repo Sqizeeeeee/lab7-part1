@@ -65,9 +65,7 @@ void merge(const std::vector<int>& B, const std::vector<int>& C, std::vector<int
 void merge_sort(std::vector<int>& arr) {
     int n = arr.size();
     if (n > 1) {
-        // Копировать A[0..⌊n/2⌋-1] в B[0..⌊n/2⌋-1]
         std::vector<int> B(arr.begin(), arr.begin() + n/2);
-        // Копировать A[⌊n/2⌋..n-1] в C[0..⌈n/2⌉-1]
         std::vector<int> C(arr.begin() + n/2, arr.end());
         
         merge_sort(B);

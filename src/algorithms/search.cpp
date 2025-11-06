@@ -5,7 +5,7 @@
 // Последовательный поиск с барьером
 int sequential_search(std::vector<int>& arr, int K) {
     int n = arr.size();
-    // A[n] ← K (добавляем барьер)
+
     arr.push_back(K);
     int i = 0;
     
@@ -13,7 +13,7 @@ int sequential_search(std::vector<int>& arr, int K) {
         i = i + 1;
     }
     
-    // Убираем барьер
+
     arr.pop_back();
     
     if (i < n) {
